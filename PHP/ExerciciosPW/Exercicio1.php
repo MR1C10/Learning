@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aplicativos em PHP</title>
+    <title>Exercicios em PHP</title>
 </head>
 <body>
     <form method="post">
