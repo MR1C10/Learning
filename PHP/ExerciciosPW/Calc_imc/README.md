@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/093316bc-e237-4de0-aa82-0dd1aede6eda)
-
 # Calculadora de IMC 🧮💪
 
 Este é um projeto simples de **Calculadora de IMC (Índice de Massa Corporal)** feito em **PHP**, como parte dos exercícios da disciplina de **Programação Web (PW)**.  
@@ -47,3 +45,6 @@ Calc_imc/
 4. Acesse no navegador:
     ```bash
     http://localhost:8000
+
+
+![image](https://github.com/user-attachments/assets/093316bc-e237-4de0-aa82-0dd1aede6eda)
