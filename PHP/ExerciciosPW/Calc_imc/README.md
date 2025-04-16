@@ -22,11 +22,13 @@ O objetivo principal é praticar conceitos básicos de PHP e manipulação de fo
 Este projeto foi desenvolvido em parceria com o [@rafalvs](https://github.com/rafalvs), como parte dos nossos estudos.
 
 ## 📁 Estrutura
-
+```
 Calc_imc/
 │ 
 ├── index.php # Página principal com o formulário e cálculo 
 ├── estilo.css # Estilo visual da página
+└── img.png # imagem da tabela de IMC
+```
 
 ## 🚀 Como rodar
 
