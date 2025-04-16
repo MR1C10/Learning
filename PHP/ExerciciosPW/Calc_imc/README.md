@@ -40,11 +40,11 @@ Calc_imc/
 
 3. Execute em um servidor local (como XAMPP ou WAMP) ou diretamente com o PHP:
     ```bash 
-    php -S localhost:8000
+    php -S localhost:8080
 
 4. Acesse no navegador:
     ```bash
-    http://localhost:8000
+    http://localhost:8080
 
 
 ![image](https://github.com/user-attachments/assets/093316bc-e237-4de0-aa82-0dd1aede6eda)
