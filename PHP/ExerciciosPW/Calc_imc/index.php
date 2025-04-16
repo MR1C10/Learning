@@ -65,15 +65,6 @@
                     }
                 }
                 
-                // $peso = $_POST['peso'];
-                // $altura = $_POST['altura']; 
-                // $nome = $_POST['nome'];
-                
-                // $IMC = $peso / ($altura**2);
-                // $result = Calc_imc($IMC);
-                
-                // echo "<h2>$nome, você está com: $result</h2>";
-                
             ?>
             
         </main>
