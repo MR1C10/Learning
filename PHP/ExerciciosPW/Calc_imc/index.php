@@ -15,8 +15,11 @@
             <br/>
 
             <form method="POST">
-                <label for="altura">Digite sua Altura</label> <br/>
-                <input type="number" id="altura" placeholder="Altura" name="altura" step="any" >
+                <label for="nome">Digite seu nome</label> <br/>
+                <input type="text" id="nome" placeholder="Nome" name="nome">
+                <br/>
+                <label for="altura">Digite seu Altura</label> <br/>
+                <input type="number" id="altura" placeholder="Altura" name="altura" step="any">
                 <br/>
                 <label for="peso">Digite seu Peso</label> <br/>
                 <input type="number" id="peso" placeholder="Peso" name="peso" step="any">
@@ -48,14 +51,29 @@
                     }
                 } 
 
-                $peso = $_POST['peso'];
-                $altura =  $_POST['altura'];
-
-                $IMC = $peso / ($altura**2);
-
-                $result = Calc_imc($IMC);
-
-                echo "<h2>$result</h2>";
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    $peso = floatval($_POST['peso']);
+                    $altura = floatval($_POST['altura']);
+                    $nome = htmlspecialchars($_POST['nome']);
+                
+                    if ($peso > 0 && $altura > 0) {
+                        $IMC = $peso / ($altura ** 2);
+                        $result = Calc_imc($IMC);
+                        echo "<h2>$nome, você está com: $result</h2>";
+                    } else {
+                        echo "<h2>Preencha altura e peso corretamente.</h2>";
+                    }
+                }
+                
+                // $peso = $_POST['peso'];
+                // $altura = $_POST['altura']; 
+                // $nome = $_POST['nome'];
+                
+                // $IMC = $peso / ($altura**2);
+                // $result = Calc_imc($IMC);
+                
+                // echo "<h2>$nome, você está com: $result</h2>";
+                
             ?>
             
         </main>
